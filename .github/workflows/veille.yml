@@ -1,0 +1,52 @@
+# Agent de veille : chaque matin (7 h à Paris l'été, 6 h l'hiver), relève vidéos, vues et visites,
+# puis ouvre une issue « Brief de veille » (GitHub vous l'envoie par e-mail) avec un bouton Publier par vidéo.
+name: Veille quotidienne
+on:
+  schedule:
+    - cron: "3 5 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    env:
+      MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/build-index.mjs
+      - name: Veille
+        run: node scripts/veille.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GOATCOUNTER_TOKEN: ${{ secrets.GOATCOUNTER_TOKEN }}
+      - name: Enregistrer les données
+        run: |
+          git config user.name "agent-veille"
+          git config user.email "agent-veille@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "Veille du $(date +%F) : vues, propositions, visites"
+          git push
+      - name: Ouvrir le brief du jour (envoyé par e-mail par GitHub)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh label create veille --color 8B5CF6 --description "Brief quotidien" 2>/dev/null || true
+          for n in $(gh issue list --label veille --state open --json number --jq '.[].number'); do gh issue close "$n" --comment "Remplacé par le brief du jour."; done
+          gh issue create --title "Brief de veille du $(date +%F)" --label veille --assignee "${{ github.repository_owner }}" --body-file brief.md
+      - name: E-mail HTML avec boutons (optionnel, si les secrets SMTP existent)
+        if: ${{ env.MAIL_USERNAME != '' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER || 'smtp.gmail.com' }}
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Guide du Vibe Coding · brief de veille"
+          to: ${{ secrets.MAIL_TO }}
+          from: Agent de veille <${{ secrets.MAIL_USERNAME }}>
+          html_body: file://brief.html

@@ -1,0 +1,207 @@
+[
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch02",
+   "ch03",
+   "ch04",
+   "ch06",
+   "ch07"
+  ],
+  "langue": "fr",
+  "nom": "Apprendre à coder",
+  "specialite": "Claude Code pour débutants, pas à pas",
+  "urlChaine": "https://www.youtube.com/@apprendreacoder-deviens-dev",
+  "id": "apprendre-a-coder",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch02",
+   "ch03",
+   "ch08",
+   "ch20",
+   "ch29"
+  ],
+  "langue": "en",
+  "nom": "Fireship",
+  "specialite": "Notions expliquées en formats courts",
+  "urlChaine": "https://www.youtube.com/@Fireship",
+  "id": "fireship",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch13",
+   "ch21",
+   "ch22",
+   "ch23",
+   "ch24",
+   "ch25"
+  ],
+  "langue": "en",
+  "nom": "Greg Isenberg",
+  "specialite": "Idées et modèles économiques de SaaS construits avec l'IA",
+  "urlChaine": "https://www.youtube.com/@GregIsenberg",
+  "id": "greg-isenberg",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch05",
+   "ch17",
+   "ch18",
+   "ch27",
+   "ch30"
+  ],
+  "langue": "en",
+  "nom": "IndyDevDan",
+  "specialite": "CLAUDE.md, hooks, MCP, flux agentiques",
+  "urlChaine": "https://www.youtube.com/@indydevdan",
+  "id": "indydevdan",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch06",
+   "ch11",
+   "ch12",
+   "ch15",
+   "ch17",
+   "ch34"
+  ],
+  "langue": "en",
+  "nom": "Lovable (officielle)",
+  "specialite": "Lovable Academy, nouveautés (skills, MCP, Supabase, Cloud), hackathons, interviews d'indie hackers",
+  "urlChaine": "https://www.youtube.com/@lovable",
+  "id": "lovable",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch05",
+   "ch27",
+   "ch30"
+  ],
+  "langue": "en",
+  "nom": "Matt Pocock",
+  "specialite": "Skills, ingénierie avec des agents",
+  "urlChaine": "https://www.youtube.com/@mattpocockuk",
+  "id": "matt-pocock",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch04",
+   "ch05",
+   "ch07",
+   "ch27",
+   "ch30",
+   "ch31"
+  ],
+  "langue": "fr",
+  "nom": "Melvynx",
+  "specialite": "Claude Code en profondeur : masterclass, méthodes avancées",
+  "urlChaine": "https://www.youtube.com/@melvynxdev",
+  "id": "melvynx",
+  "channelId": ""
+ },
+ {
+  "active": false,
+  "chapitresCibles": [
+   "ch12",
+   "ch16",
+   "ch24"
+  ],
+  "langue": "en",
+  "nom": "Mikey No Code",
+  "specialite": "Déploiement mobile, App Store, intégrations no-code autour de Lovable",
+  "urlChaine": "https://www.youtube.com/results?search_query=Mikey+No+Code+Lovable",
+  "id": "mikey-no-code",
+  "channelId": ""
+ },
+ {
+  "active": false,
+  "chapitresCibles": [
+   "ch27",
+   "ch30",
+   "ch31"
+  ],
+  "langue": "fr",
+  "nom": "Naïer Saidane",
+  "specialite": "Ressources Claude Code et codage assisté par IA",
+  "urlChaine": "https://www.youtube.com/results?search_query=Na%C3%AFer+Saidane",
+  "id": "naier-saidane",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch09",
+   "ch10",
+   "ch11",
+   "ch14",
+   "ch15",
+   "ch16"
+  ],
+  "langue": "en",
+  "nom": "Riley Brown",
+  "specialite": "Construire des applications en vibe coding, pour les non-développeurs",
+  "urlChaine": "https://www.youtube.com/@rileybrownai",
+  "id": "riley-brown",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch01",
+   "ch02",
+   "ch28",
+   "ch29",
+   "ch32"
+  ],
+  "langue": "fr",
+  "nom": "Shubham Sharma",
+  "specialite": "Vulgarisation de l'IA et du no-code, usages et outils",
+  "urlChaine": "https://www.youtube.com/channel/UCLKx4-_XO5sR0AO0j8ye7zQ",
+  "id": "shubham-sharma",
+  "channelId": "UCLKx4-_XO5sR0AO0j8ye7zQ"
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch06",
+   "ch11",
+   "ch12",
+   "ch15",
+   "ch24"
+  ],
+  "langue": "en",
+  "nom": "Tech With Tim",
+  "specialite": "Cours complets sur Lovable, GitHub, Supabase, déploiement",
+  "urlChaine": "https://www.youtube.com/@TechWithTim",
+  "id": "tech-with-tim",
+  "channelId": ""
+ },
+ {
+  "active": true,
+  "chapitresCibles": [
+   "ch09",
+   "ch14",
+   "ch21",
+   "ch28"
+  ],
+  "langue": "en",
+  "nom": "Tina Huang",
+  "specialite": "Productivité, prototypes et SaaS créés rapidement",
+  "urlChaine": "https://www.youtube.com/@TinaHuang1",
+  "id": "tina-huang",
+  "channelId": ""
+ }
+]

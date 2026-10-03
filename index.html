@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Guide du Vibe Coding</title>
+<meta name="description" content="Construire son site, son application et son SaaS en parlant à une IA : 34 chapitres interactifs avec Claude et Lovable, planches animées, prompts à personnaliser et guide PDF sur mesure.">
+<meta name="theme-color" content="#0F1117">
+<meta property="og:title" content="Guide du Vibe Coding">
+<meta property="og:description" content="Du site vitrine au SaaS, avec Claude et Lovable. Un guide interactif qui se reflète dans votre projet.">
+<meta property="og:type" content="book">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/silkscreen-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preconnect" href="https://i.ytimg.com">
+<link rel="stylesheet" href="css/guide.css">
+</head>
+<body>
+<header class="entete">
+  <div class="conteneur">
+    <a class="marque" href="#accueil"><span class="logo" id="logo" aria-hidden="true"></span><span><span class="titre-long">Guide du Vibe Coding</span><small>v5.1 · interactif</small></span></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#accueil" data-vue="accueil"><span class="ico" data-ico="sommaire"></span><span class="lib">Sommaire</span></a>
+      <a href="#mon-guide" data-vue="mon-guide"><span class="ico" data-ico="miroir"></span><span class="lib">Mon guide</span></a>
+      <a href="#lexique" data-vue="lexique"><span class="ico" data-ico="lexique"></span><span class="lib">Lexique</span></a>
+      <a href="#videos" data-vue="videos"><span class="ico" data-ico="videos"></span><span class="lib">Vidéos</span></a>
+      <a href="#annexe-mode-emploi" data-vue="annexe"><span class="ico" data-ico="annexes"></span><span class="lib">Annexes</span></a>
+    </nav>
+    <button type="button" class="btn-recherche" id="btn-recherche" aria-label="Rechercher (Ctrl K)"></button>
+  </div>
+  <div class="progression-lecture" id="progression"></div>
+</header>
+<main id="app" class="conteneur"><p class="chargement">Chargement du guide…</p></main>
+<footer class="pied">
+  <div class="conteneur">
+    <span>Guide du Vibe Coding · Ludovic Albisser · Claude et Lovable</span>
+    <span><a href="#imprimer">Télécharger le guide complet (PDF)</a> · <a href="#tableau">Tableau de bord</a></span>
+  </div>
+</footer>
+<script src="js/vendor/marked.min.js" defer></script>
+<script src="js/vendor/purify.min.js" defer></script>
+<script src="js/pixel.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>

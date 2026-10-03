@@ -1,0 +1,13 @@
+{
+  "name": "guide-vibecoding",
+  "private": true,
+  "type": "module",
+  "description": "Guide du Vibe Coding — site interactif, agents de veille et PDF",
+  "scripts": {
+    "index": "node scripts/build-index.mjs",
+    "dev": "node scripts/build-index.mjs && python3 -m http.server 8000",
+    "build": "node scripts/build-index.mjs && node scripts/optimiser.mjs",
+    "veille": "node scripts/veille.mjs",
+    "pdf": "python3 scripts/pdf.py"
+  }
+}

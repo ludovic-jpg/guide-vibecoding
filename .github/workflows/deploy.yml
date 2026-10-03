@@ -1,0 +1,30 @@
+# Publie le site sur GitHub Pages à chaque modification (et après chaque passage des agents).
+name: Déploiement du site
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: ["Veille quotidienne", "Agent publicateur"]
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency: { group: pages, cancel-in-progress: true }
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: "${{ steps.d.outputs.page_url }}" }
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/build-index.mjs
+      - run: npm i --no-save --no-audit --no-fund esbuild@0.24 sharp@0.33 && node scripts/optimiser.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: _site }
+      - id: d
+        uses: actions/deploy-pages@v4

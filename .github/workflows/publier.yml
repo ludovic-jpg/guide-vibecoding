@@ -1,0 +1,33 @@
+# Agent publicateur : quand l'auteur (et lui seul) ouvre une issue « publier:<id>:<chNN> » ou « ecarter:<id> »
+# — c'est ce que fait le bouton Publier du brief —, la vidéo est ajoutée au site, l'issue est fermée.
+name: Agent publicateur
+on:
+  issues:
+    types: [opened]
+permissions:
+  contents: write
+  issues: write
+jobs:
+  publier:
+    if: github.event.issue.user.login == github.repository_owner && (startsWith(github.event.issue.title, 'publier:') || startsWith(github.event.issue.title, 'ecarter:'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/build-index.mjs
+      - name: Publier
+        env: { TITRE: "${{ github.event.issue.title }}" }
+        run: node scripts/publier.mjs "$TITRE"
+      - name: Enregistrer
+        run: |
+          git config user.name "agent-publicateur"
+          git config user.email "agent-publicateur@users.noreply.github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "$(head -c 200 resultat.txt)"
+          git push
+      - name: Répondre et fermer
+        if: always()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh issue close ${{ github.event.issue.number }} --comment "$(cat resultat.txt 2>/dev/null || echo 'Échec, voir le journal de l’action.')"

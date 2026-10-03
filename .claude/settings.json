@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./js/vendor/**)",
+      "Read(./assets/fonts/**)",
+      "Read(./node_modules/**)",
+      "Read(./_site/**)",
+      "Read(./dist/**)"
+    ],
+    "allow": [
+      "Bash(node scripts/build-index.mjs)",
+      "Bash(python3 -m http.server*)",
+      "Bash(git status)",
+      "Bash(git diff*)"
+    ]
+  }
+}

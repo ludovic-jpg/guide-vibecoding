@@ -1,0 +1,151 @@
+---
+id: A
+ordre: 1
+titre: "Lexique alphabétique"
+---
+Tous les mots du livre, dans l'ordre alphabétique. Les fiches des chapitres les développent ; le chapitre 8 les regroupe par familles.
+
+- **.env** : fichier des variables d'environnement et des secrets ; il n'est jamais publié.
+- **.gitignore** : liste des fichiers que Git doit ignorer, à commencer par .env.
+- **ADR** : Architecture Decision Record, une courte fiche qui consigne une décision technique, son contexte, les options écartées et la raison du choix.
+- **Agent (IA)** : une IA qui enchaîne seule des actions (lire, écrire, exécuter, corriger) vers un objectif fixé.
+- **AGENTS.md** : fichier d'instructions partagé, lu par Lovable et de nombreux agents ; Claude Code le lit s'il n'y a pas de CLAUDE.md, sinon CLAUDE.md doit l'importer.
+- **AI Act** : règlement européen sur l'IA ; il vous concerne si votre application en intègre.
+- **API** : Interface par laquelle un logiciel adresse des demandes à un autre et reçoit des réponses, selon des formes strictement définies.
+- **Appel à l'action** : L'élément d'une page (bouton, lien, formulaire) qui invite le visiteur à faire le geste principal attendu : acheter, s'inscrire, écrire.
+- **Application GitHub** : service tiers (Lovable, Claude, Supabase) relié à GitHub, installé sur des dépôts, autorisé à agir en votre nom, ou les deux.
+- **Artefact** : dans Claude, une page ou une petite application produite à côté de la conversation, privée par défaut.
+- **Attrition** : La proportion de clients (ou de revenu récurrent) perdue sur une période, en général un mois.
+- **Authentification** : vérifier qui vous êtes (mot de passe, lien magique, compte Google).
+- **Autorisation** : Ensemble des règles qui fixent ce qu'une personne connectée a le droit de voir et de faire dans l'application.
+- **Backend** : la partie invisible de l'application, côté serveur, qui applique les règles et parle à la base.
+- **Base de données** : l'armoire à fiches où l'application range durablement ses informations.
+- **Branche** : copie parallèle du code pour essayer sans toucher à la version principale (main).
+- **Bucket** : Un espace de stockage de fichiers, dans le backend d'une application, doté de ses propres règles d'accès (le mot anglais veut dire « seau »).
+- **Cahier des charges** : ce que l'application doit faire, pour qui et dans quelles limites, en neuf rubriques (chapitre 10).
+- **Carnet de bord** : Le carnet personnel d'apprentissage, tenu à chaque séance : ce qui a été fait, appris, pas compris, et quand le réviser.
+- **CGV** : conditions générales de vente : ce qui est vendu, à quel prix, comment on paie, comment on résilie et qui répond de quoi.
+- **Champ piège** : champ de formulaire invisible pour un humain mais rempli par les robots ; une demande où il est rempli est écartée (pot de miel, honeypot).
+- **Chat, Plan, Build** : les trois modes de Lovable : discuter, faire approuver un plan, modifier réellement le projet.
+- **Claude Code** : l'agent de programmation d'Anthropic, inclus dès l'offre Pro.
+- **CLAUDE.md** : fichier des consignes permanentes, lu par Claude Code à chaque session.
+- **Clé d'API** : mot de passe technique qui ouvre l'accès à un service, souvent facturé à l'usage.
+- **Clé étrangère** : Une colonne d'une table qui contient l'identifiant d'une ligne d'une autre table, et qui relie ainsi les deux (le commentaire porte l'identifiant de son chapitre).
+- **Clé publique, clé secrète** : la première peut apparaître dans le navigateur, la seconde ne quitte jamais le serveur.
+- **Commit** : sauvegarde nommée de l'état du projet à un instant donné, avec un court message qui dit ce qui a changé.
+- **Connecteur** : Une liaison autorisée entre Claude et un service extérieur (messagerie, agenda, fichiers en ligne), qui lui permet d'y lire et parfois d'y agir en votre nom.
+- **Connecteur d'application** : Une connexion, créée dans l'espace de travail Lovable, qui permet à une application publiée d'utiliser un service extérieur avec un compte unique, sans que les identifiants apparaissent dans le code.
+- **Cowork** : capacité de Claude, présentée en janvier 2026, à mener une tâche en plusieurs étapes, fichiers compris ; désormais fondue dans l'application Claude.
+- **Credit check-in** : Un seuil de crédits, réglable, au-delà duquel Lovable interrompt un travail en cours pour vous demander s'il doit continuer ou conclure.
+- **Crédits** : unité de consommation de Lovable ; chaque demande en coûte une fraction ou plusieurs.
+- **Critère d'acceptation** : Une condition vérifiable qui dit si une fonctionnalité est terminée et correcte.
+- **Cursor** : éditeur de code doté d'un agent, présenté avec les autres outils en annexe H.
+- **Délégation de sous-domaine** : Le fait de confier à un autre service la gestion complète d'un sous-domaine (par exemple notify.monapp.fr) en inscrivant ses serveurs de noms dans votre DNS.
+- **Délivrabilité** : La capacité d'un expéditeur à faire arriver ses e-mails dans la boîte de réception, plutôt que dans les indésirables ou nulle part.
+- **Déploiement** : publication d'une nouvelle version de l'application en ligne.
+- **Dépôt** : dossier du projet avec tout son historique, souvent hébergé sur GitHub.
+- **Dette technique** : Le coût futur des raccourcis pris aujourd'hui dans le code : chaque solution rapide rend les modifications suivantes plus lentes et plus risquées.
+- **Développeur augmenté** : Une personne qui conçoit et fait fabriquer des logiciels en dirigeant des IA, qu'elle sache coder ou non, et qui reste responsable de ce qui est produit.
+- **Difficulté désirable** : Un obstacle introduit volontairement dans l'apprentissage (chercher avant de voir la réponse, espacer les révisions, mélanger les sujets) parce qu'il ralentit sur le moment mais améliore la rétention.
+- **Divulgation progressive** : Le principe de chargement des skills : l'agent lit d'abord leurs seules descriptions, puis les instructions d'une skill quand la demande y correspond, puis ses fichiers annexes si nécessaire.
+- **DNS** : annuaire d'Internet qui relie un nom de domaine à l'adresse d'un serveur.
+- **Double consentement** : inscription en deux temps : l'adresse saisie n'entre dans la liste qu'après un clic sur le lien de confirmation reçu par e-mail (double opt-in).
+- **Edge Function** : petit programme lancé à la demande côté serveur ; c'est là que vivent les appels qui exigent un secret (paiement, e-mail, IA).
+- **Environnement** : Une copie complète et isolée d'une application (code, base, secrets) destinée à un usage précis : développer, tester, ou servir les vrais utilisateurs (la « production »).
+- **Fenêtre de contexte** : Quantité de texte, mesurée en jetons, que le modèle peut prendre en compte en même temps : consigne, historique, fichiers, documents joints.
+- **File d'attente** : Une liste de tâches à exécuter plus tard, en arrière-plan, dans l'ordre et au rythme que le système peut tenir, plutôt que pendant que l'utilisateur attend devant son écran.
+- **Frontend** : La partie visible de l'application, qui s'affiche et s'exécute dans le navigateur ou le téléphone du visiteur.
+- **Gabarit** : Un document vide mais structuré, dont les rubriques et les questions obligent à trancher chaque point avant de le confier à l'IA.
+- **Git** : logiciel qui enregistre l'historique d'un dossier de code.
+- **GitHub** : site qui héberge des dépôts Git en ligne.
+- **Goal** : dans Lovable, un message (/goal) que l'agent poursuit sans questions jusqu'au but ; bien plus cher, il s'arrête au seuil de crédits choisi.
+- **Grilling** : Chez Matt Pocock, le fait de se faire interroger sans relâche par l'agent sur un plan, jusqu'à ce que chaque choix soit tranché.
+- **Hallucination** : Affirmation ou code inventé par l'IA, plausible mais faux, présenté avec la même assurance qu'un fait exact.
+- **HIBP** : Un contrôle qui refuse les mots de passe déjà apparus dans des fuites de données connues, d'après la base publique Have I Been Pwned (« me suis-je fait avoir ? »).
+- **Hook** : Une commande que Claude Code exécute automatiquement à un moment précis du travail de l'agent (avant ou après une action, à la fin d'une réponse), sans que le modèle puisse s'y soustraire.
+- **HTML, CSS, JavaScript** : la structure d'une page, son apparence et son comportement.
+- **HTTPS** : connexion chiffrée entre le navigateur et le site (le cadenas).
+- **Idempotence** : La propriété d'une opération qui produit le même résultat qu'on l'exécute une fois ou dix fois.
+- **Illusion de compétence** : Le sentiment de maîtriser un sujet parce qu'on a obtenu un résultat qui marche, alors qu'on serait incapable de le reproduire ou de l'expliquer seul.
+- **Index** : Une structure rangée à part, que la base tient à jour, et qui lui permet de trouver des lignes sans parcourir toute la table.
+- **Injection de prompt** : Une instruction glissée dans un contenu que l'IA lit (un commentaire, un ticket, une page web, une ligne de la base) et qu'elle risque d'exécuter comme si elle venait de vous.
+- **Injection SQL, XSS** : attaques où l'on glisse du code dans un champ de saisie.
+- **Instance** : Une machine (le plus souvent virtuelle) réservée à un service, avec une quantité donnée de processeur, de mémoire et de disque, facturée au temps d'allumage.
+- **Instructions de projet** : Un texte attaché à un projet Claude, lu au début de chacune de ses conversations, qui fixe le rôle de Claude, l'objectif du chantier, ses contraintes et ses interdits.
+- **Jeton (token)** : Morceau de mot (token en anglais), unité que le modèle lit et écrit, et unité de mesure des limites et de la facturation.
+- **Journal de décisions** : Le fichier decisions.md d'un projet, relu par Claude, où l'on consigne chaque décision importante d'un chantier, avec sa date, sa raison et les solutions écartées, pour ne pas la rediscuter par oubli.
+- **Knowledge** : dans Lovable, instructions permanentes (jusqu'à 10 000 caractères) jointes à chaque demande.
+- **Lean Canvas** : Une page en neuf cases qui résume les hypothèses d'un projet naissant : problème, clients, proposition de valeur, solution, canaux, revenus, coûts, indicateurs, avantage.
+- **Lexique personnel** : Un fichier où vous notez, avec vos propres mots, chaque terme technique rencontré, sa définition, un exemple tiré de votre projet et la date.
+- **Limite de débit** : Un nombre maximal de requêtes (ou de tokens) accepté par unité de temps, au-delà duquel le service répond « trop de requêtes » (code 429) au lieu de travailler.
+- **LLM** : Grand modèle de langage : programme entraîné sur d'immenses textes pour prédire la suite la plus probable d'un texte.
+- **Lot** : Une tranche du projet qui se livre, se teste et se publie seule, et qui laisse l'application dans un état utilisable.
+- **Lovable** : outil suédois qui génère une application web à partir d'une description.
+- **Lovable AI** : IA ajoutée à une application Lovable (chatbot, résumé, images) sans clé à gérer, avec des modèles de Google et d'OpenAI (pas Claude) ; 4 crédits IA offerts par mois, puis facturation à l'usage.
+- **Lovable Cloud** : backend intégré à Lovable, bâti sur Supabase ; sa région est définitive.
+- **Marchand officiel** : intermédiaire qui vend votre produit en son nom, encaisse, facture, reverse les taxes et vous verse le reste (merchant of record).
+- **Matrice des droits** : Un tableau qui croise chaque rôle et chaque type de données, et dit pour chaque case si le rôle peut lire, créer, modifier ou supprimer, et à quelle condition.
+- **MCP** : standard ouvert qui branche une IA sur des services extérieurs pour y lire et y agir.
+- **Mémoire de Claude** : L'ensemble des sujets que Claude retient sur vous et sur vos projets d'une conversation à l'autre, que vous pouvez lire, corriger, mettre en pause ou effacer.
+- **Migration** : Un petit fichier SQL daté qui décrit un changement de structure de la base (ajouter une table, une colonne, une règle), rejoué dans l'ordre pour reconstruire la base à l'identique.
+- **Migration rétrocompatible** : Une modification du schéma de la base que l'ancienne version de l'application supporte encore, ce qui permet de revenir au code précédent sans casser les données.
+- **Mise en cache du prompt** : Un mécanisme de l'API qui garde en mémoire, pendant quelques minutes ou une heure, le début fixe d'un prompt, pour le relire à prix réduit lors des appels suivants.
+- **Mode plan** : mode où l'IA étudie le projet et propose un plan sans rien modifier avant votre accord.
+- **Moindre privilège** : n'accorder à une personne, une application ou une clé que les droits nécessaires à sa tâche, sur le périmètre et pour la durée nécessaires.
+- **Mom Test** : méthode d'entretien (Rob Fitzpatrick) qui interroge sur des faits passés plutôt que sur votre idée.
+- **MoSCoW** : Une façon de trier les fonctionnalités en quatre paniers : Must have (indispensable), Should have (souhaitable), Could have (facultatif), Won't have (pas cette fois).
+- **Multi-locataire** : Une application qui sert plusieurs clients (organisations) avec une seule installation et une seule base, en séparant leurs données par des règles.
+- **MVP** : la plus petite version d'un produit qui permet d'apprendre de vrais utilisateurs.
+- **Node.js, npm** : le moteur qui exécute du JavaScript hors du navigateur, et son magasin de briques.
+- **OAuth** : connexion déléguée à un compte existant (« Se connecter avec Google »).
+- **Output style** : Un réglage de Claude Code qui modifie la manière dont l'agent vous répond (explications ajoutées, code laissé à écrire), sans changer ce qu'il sait du projet.
+- **Page d'atterrissage** : Une page web unique, conçue pour une seule action (s'inscrire, acheter, demander un devis), sur laquelle arrivent les visiteurs d'une campagne ou d'un lien.
+- **Passerelle d'IA** : Un service intermédiaire qui reçoit les demandes d'IA de votre application, les transmet au modèle choisi chez un fournisseur et vous facture l'ensemble sous un seul compte.
+- **Périmètre** : La liste de ce que l'application fait, et surtout de ce qu'elle ne fait pas, dans sa version actuelle.
+- **PITR** : « Point-in-Time Recovery » : la base peut être ramenée à la seconde de votre choix dans une fenêtre de quelques jours.
+- **Plafond de dépense** : Un montant mensuel maximal fixé dans la console d'un fournisseur d'API, au-delà duquel les appels sont refusés au lieu d'être facturés.
+- **Plugin** : Un paquet installable qui réunit des compétences, des connecteurs, des commandes et des sous-agents autour d'un métier ou d'une tâche.
+- **Pooler** : Un intermédiaire placé devant la base de données, qui partage un petit nombre de connexions entre un grand nombre de demandes courtes.
+- **Portail client** : Une page hébergée par le prestataire de paiement, où l'abonné gère lui-même son moyen de paiement, ses factures, son offre et sa résiliation.
+- **Postmortem** : Le compte rendu écrit après un incident : ce qui s'est passé, ce qui l'a permis, ce qu'on change pour que cela ne se reproduise pas.
+- **Prix unique du livre** : règle française (loi Lang du 10 août 1981) : l'éditeur fixe le prix public du livre, que tous les vendeurs respectent à 5 % près.
+- **Problème des 70 %** : constat d'Addy Osmani (décembre 2024) : l'IA fait vite la plus grande partie du chemin, mais la dernière (cas limites, erreurs, sécurité, performances) demande du jugement.
+- **Production** : la version en ligne, utilisée par les vrais utilisateurs.
+- **Prompt** : instruction écrite donnée à l'IA.
+- **Proposition de valeur** : La phrase qui dit à qui s'adresse une offre, quel problème elle règle et ce qui la distingue des autres solutions, y compris celles qui sont gratuites.
+- **Pull request** : Une demande pour intégrer les modifications d'une branche dans une autre, accompagnée d'une page où l'on peut relire, commenter et approuver avant la fusion.
+- **Push** : envoi des commits locaux vers le dépôt en ligne.
+- **Rebond** : Le retour d'un e-mail refusé par le serveur du destinataire : définitif (adresse inexistante) ou temporaire (boîte pleine, serveur indisponible).
+- **Recette** : La série de vérifications faites sur une application avant de l'accepter, en comparant pour chaque scénario le résultat attendu, écrit d'avance, au résultat obtenu.
+- **Recette de cuisine (en vibe coding)** : Une procédure éprouvée pour obtenir un type d'application précis, avec ses outils, son prompt de départ, ses étapes et ses pièges connus.
+- **Réflexe de méthode** : Un geste simple, répété à chaque séance de travail, qui prévient une catégorie entière d'erreurs sans demander de compétence technique.
+- **Registrar** : L'entreprise auprès de laquelle on loue un nom de domaine et qui gère ses renouvellements et ses réglages DNS.
+- **Rendu côté serveur** : La fabrication de la page HTML complète sur le serveur, avant l'envoi, plutôt que dans le navigateur du visiteur. On dit aussi SSR (*Server-Side Rendering*).
+- **Revenu récurrent mensuel (MRR)** : La somme des abonnements actifs ramenée à un mois, hors paiements ponctuels et hors taxes.
+- **Réversibilité** : La possibilité de revenir à la situation précédente après un changement, avec un effort et un risque connus d'avance.
+- **RGPD** : règlement européen sur les données personnelles, applicable dès la première adresse e-mail collectée.
+- **RLS** : règles attachées à chaque table qui disent, ligne par ligne, qui peut lire ou modifier quoi.
+- **Rôle** : Une étiquette attribuée à un compte, qui détermine l'ensemble des actions permises à son titulaire dans l'application (auteur, relecteur).
+- **Rollback** : retour à une version précédente qui fonctionnait.
+- **Runbook** : cahier d'exploitation : la liste datée et ordonnée des actions pour lancer, surveiller et réparer l'application, écrite à l'avance.
+- **Session de paiement** : objet que votre serveur fait créer par Stripe pour un achat précis, et qui donne l'adresse de la page de paiement où envoyer le client.
+- **Skill** : dossier d'instructions (SKILL.md) que l'agent charge quand la tâche le demande ; standard ouvert depuis décembre 2025.
+- **Slopsquatting** : publication, par des attaquants, de paquets portant les noms inventés par les IA.
+- **Sous-agent** : assistant spécialisé qui travaille dans un contexte séparé et ne renvoie qu'un résumé.
+- **Sous-traitance en cascade** : la chaîne des prestataires qui traitent des données personnelles les uns pour les autres (votre client, vous, votre hébergeur, votre fournisseur d'IA) ; chacun répond de celui qu'il a choisi.
+- **Spécification** : ce qu'on veut construire et pourquoi, avant le comment.
+- **SPF, DKIM, DMARC** : enregistrements DNS qui prouvent aux messageries que vos e-mails sont authentiques.
+- **Squelette** : première version d'un site : toutes les pages et la navigation, sans base de données, ni comptes, ni paiement.
+- **Staging** : Un environnement de préproduction, aussi proche que possible de la production, mais avec ses propres données et ses propres clés, où l'on vérifie une version avant de l'ouvrir au public.
+- **Stripe** : service de paiement en ligne ; ses clés sk_ ne quittent jamais le serveur.
+- **Supabase** : backend open source bâti sur PostgreSQL.
+- **Surface d'attaque** : L'ensemble des endroits par lesquels quelqu'un peut essayer d'entrer dans une application ou d'en tirer des données : pages, fonctions serveur, espaces de stockage, clés, comptes, agents branchés.
+- **Système de design** : L'ensemble des règles visuelles d'un site (couleurs, typographies, espacements, boutons, encadrés) fixées une fois et appliquées partout.
+- **Trace** : ligne que le programme écrit volontairement dans la console ou les journaux (« commentaire reçu ») pour qu'on puisse suivre son chemin.
+- **URL signée** : Une adresse web temporaire vers un fichier privé, accompagnée d'une signature qui prouve qu'elle a été délivrée par l'application, et qui cesse de fonctionner après un délai.
+- **Variable d'environnement** : réglage ou secret fourni au programme de l'extérieur du code.
+- **Vibe coding** : Créer un logiciel en décrivant en langage courant ce que l'on veut à une IA qui écrit le code, sans lire ce code, en jugeant au résultat visible.
+- **Vibe engineering** : expression de Simon Willison (octobre 2025) : l'usage exigeant des agents, où l'on reste responsable du code.
+- **Webhook** : appel automatique qu'un service (Stripe) envoie à votre application quand un événement survient.
+- **Worker** : Un petit programme serveur hébergé par Cloudflare, lancé à la demande au plus près du visiteur, qui répond à une requête puis s'efface.
+- **Worktree** : Un second dossier de travail rattaché au même dépôt Git, sur une autre branche, qui permet de mener deux chantiers en parallèle sans qu'ils se marchent dessus.
