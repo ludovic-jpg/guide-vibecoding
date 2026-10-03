@@ -58,9 +58,11 @@ async function flux(c) {
 }
 
 async function vuesPage(id) {
-  const r = await get(`https://www.youtube.com/watch?v=${id}&hl=fr`); if (!r) return null;
-  const m = (await r.text()).match(/"viewCount":"(\d+)"/);
-  return m ? Number(m[1]) : null;
+  const r = await get(`https://www.youtube.com/watch?v=${id}&hl=en&gl=US`, { headers: { ...UA, Cookie: "CONSENT=YES+cb; SOCS=CAI" } }); if (!r) return null;
+  const html = await r.text();
+  const m = html.match(/"viewCount":"(\d+)"/) || html.match(/"viewCount":\{"simpleText":"([\d,.\s]+)/) || html.match(/itemprop="interactionCount" content="(\d+)"/);
+  if (!m) { journal.push(`Vues introuvables pour ${id} (page de ${html.length} caractères) : ajoutez le secret YOUTUBE_API_KEY pour des vues fiables.`); return null; }
+  return Number(String(m[1]).replace(/\D/g, ""));
 }
 async function vuesApi(ids) {
   const cle = process.env.YOUTUBE_API_KEY, res = {};
@@ -82,16 +84,20 @@ function profilChapitre(c) {
   const base = mots([c.titre, ...(c.boite || []), ...(c.titres || [])].join(" "));
   return new Set([...base, ...base.flatMap(m => (TRAD[m] || "").split(" ").filter(Boolean)), ...Object.keys(c.outils || {}).flatMap(o => o.split("-"))]);
 }
+// Un candidat doit parler du sujet du livre (au moins un terme « ancre ») et partager au moins 3 notions avec le chapitre.
+const ANCRES = new Set("claude lovable vibe vibecoding coding agent agents agentic mcp supabase cursor prompt prompts saas llm skills hooks anthropic bolt replit windsurf copilot nocode no-code playwright stripe deploy deployment".split(" "));
+const GENERIQUES = new Set("code coder coding guide tutorial tutoriel apprendre learn lignes developpeur developer dev video videos complete complet full minutes 2025 2026 debutant beginner beginners".split(" "));
 function meilleurChapitre(v, chaine) {
   const mv = new Set(mots(v.titre + " " + v.description));
+  if (![...mv].some(m => ANCRES.has(m))) return null;
   let best = null;
   for (const id of chaine.chapitresCibles || []) {
     const c = index.chapitres.find(x => x.id === id); if (!c) continue;
-    const pc = profilChapitre(c), commun = [...mv].filter(m => pc.has(m));
-    const score = commun.length + (mv.has("claude") || mv.has("lovable") ? 0.5 : 0);
+    const pc = profilChapitre(c), commun = [...mv].filter(m => pc.has(m) && !GENERIQUES.has(m));
+    const score = commun.length + commun.filter(m => ANCRES.has(m)).length * 0.5;
     if (!best || score > best.score) best = { c, score, commun };
   }
-  return best && best.score >= 2 ? best : null;
+  return best && best.commun.length >= 3 ? best : null;
 }
 
 // ── Tri sémantique par Claude (si ANTHROPIC_API_KEY) : une seule requête par passage ──
