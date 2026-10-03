@@ -13,7 +13,7 @@
   "specialite": "Claude Code pour débutants, pas à pas",
   "urlChaine": "https://www.youtube.com/@apprendreacoder-deviens-dev",
   "id": "apprendre-a-coder",
-  "channelId": ""
+  "channelId": "UCWuCJZ--RqYFcK-9YWswbMw"
  },
  {
   "active": true,
@@ -29,7 +29,7 @@
   "specialite": "Notions expliquées en formats courts",
   "urlChaine": "https://www.youtube.com/@Fireship",
   "id": "fireship",
-  "channelId": ""
+  "channelId": "UC2Xd-TjJByJyK2w1zNwY0zQ"
  },
  {
   "active": true,
@@ -46,7 +46,7 @@
   "specialite": "Idées et modèles économiques de SaaS construits avec l'IA",
   "urlChaine": "https://www.youtube.com/@GregIsenberg",
   "id": "greg-isenberg",
-  "channelId": ""
+  "channelId": "UCPjNBjflYl0-HQtUvOx0Ibw"
  },
  {
   "active": true,
@@ -62,7 +62,7 @@
   "specialite": "CLAUDE.md, hooks, MCP, flux agentiques",
   "urlChaine": "https://www.youtube.com/@indydevdan",
   "id": "indydevdan",
-  "channelId": ""
+  "channelId": "UC_x36zCEGilGpB1m-V4gmjg"
  },
  {
   "active": true,
@@ -79,7 +79,7 @@
   "specialite": "Lovable Academy, nouveautés (skills, MCP, Supabase, Cloud), hackathons, interviews d'indie hackers",
   "urlChaine": "https://www.youtube.com/@lovable",
   "id": "lovable",
-  "channelId": ""
+  "channelId": "UCds72zs2EzQRmhqbLLCmD4A"
  },
  {
   "active": true,
@@ -93,7 +93,7 @@
   "specialite": "Skills, ingénierie avec des agents",
   "urlChaine": "https://www.youtube.com/@mattpocockuk",
   "id": "matt-pocock",
-  "channelId": ""
+  "channelId": "UCswG6FSbgZjbWtdf_hMLaow"
  },
  {
   "active": true,
@@ -110,7 +110,7 @@
   "specialite": "Claude Code en profondeur : masterclass, méthodes avancées",
   "urlChaine": "https://www.youtube.com/@melvynxdev",
   "id": "melvynx",
-  "channelId": ""
+  "channelId": "UC5HDIVwuqoIuKKw-WbQ4CvA"
  },
  {
   "active": false,
@@ -155,7 +155,7 @@
   "specialite": "Construire des applications en vibe coding, pour les non-développeurs",
   "urlChaine": "https://www.youtube.com/@rileybrownai",
   "id": "riley-brown",
-  "channelId": ""
+  "channelId": "UCMcoud_ZW7cfxeIugBflSBw"
  },
  {
   "active": true,
@@ -187,7 +187,7 @@
   "specialite": "Cours complets sur Lovable, GitHub, Supabase, déploiement",
   "urlChaine": "https://www.youtube.com/@TechWithTim",
   "id": "tech-with-tim",
-  "channelId": ""
+  "channelId": "UCZirJBCIZsSgsSPn-uWVSfg"
  },
  {
   "active": true,
@@ -202,6 +202,6 @@
   "specialite": "Productivité, prototypes et SaaS créés rapidement",
   "urlChaine": "https://www.youtube.com/@TinaHuang1",
   "id": "tina-huang",
-  "channelId": ""
+  "channelId": "UC2UXDak6o7rBm23k3Vv5dww"
  }
 ]
