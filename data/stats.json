@@ -1,4 +1,225 @@
 {
- "maj": "2026-10-03",
- "videos": {}
+ "maj": "2026-10-04",
+ "videos": {
+  "Tw18-4U7mts": {
+   "titre": "The \"vibe coding\" mind virus explained…",
+   "chaine": "Fireship",
+   "chapitre": "ch02",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 1969099
+    }
+   ]
+  },
+  "PLKrSVuT-Dg": {
+   "titre": "How to make vibe coding not suck…",
+   "chaine": "Fireship",
+   "chapitre": "ch02",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 928361
+    }
+   ]
+  },
+  "3JW732GrMdg": {
+   "titre": "I replaced my entire tech stack with Postgres...",
+   "chaine": "Fireship",
+   "chapitre": "ch03",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 1591386
+    }
+   ]
+  },
+  "sEifu9L0v1g": {
+   "titre": "Je setup Claude Code chez un Vibe Codeur en 20 minutes",
+   "chaine": "Melvynx",
+   "chapitre": "ch04",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 8674
+    }
+   ]
+  },
+  "9tmsq-Gvx6g": {
+   "titre": "Never Run claude /init",
+   "chaine": "Matt Pocock",
+   "chapitre": "ch05",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 85596
+    }
+   ]
+  },
+  "YLjopoEnPi8": {
+   "titre": "Lovable FULL Tutorial - For COMPLETE Beginners (No Experience Needed)",
+   "chaine": "Tech With Tim",
+   "chapitre": "ch06",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 149468
+    }
+   ]
+  },
+  "xDwR1_vrIg8": {
+   "titre": "Lovable 2.0 is here. Multiplayer vibe coding. Smarter & more secure.",
+   "chaine": "Lovable",
+   "chapitre": "ch06",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 10732242
+    }
+   ]
+  },
+  "33lvXU1BYu8": {
+   "titre": "6 mois de Claude Code leçons en 22 minutes",
+   "chaine": "Melvynx",
+   "chapitre": "ch07",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 7724
+    }
+   ]
+  },
+  "qxygwvBoBTc": {
+   "titre": "Lovable ADVANCED Tutorial - FULL Guide for Real Websites",
+   "chaine": "Tech With Tim",
+   "chapitre": "ch11",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 16381
+    }
+   ]
+  },
+  "mKEq_YaJjPI": {
+   "titre": "How I build Agentic MCP Servers for Claude Code (Prompts CHANGE Everything)",
+   "chaine": "IndyDevDan",
+   "chapitre": "ch17",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 30974
+    }
+   ]
+  },
+  "iknD5PRmym4": {
+   "titre": "Turn Any Lovable App Into an MCP Server in 14 Min",
+   "chaine": "Lovable (officielle)",
+   "chapitre": "ch17",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 4384
+    }
+   ]
+  },
+  "ibzSgp8B2Hw": {
+   "titre": "How I find $130K/month AI SaaS Opportunities hiding in plain sight",
+   "chaine": "Greg Isenberg",
+   "chapitre": "ch21",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 115990
+    }
+   ]
+  },
+  "M6mYodf0dJM": {
+   "titre": "mattpocock/skills: Learn the whole flow, end-to-end",
+   "chaine": "Matt Pocock",
+   "chapitre": "ch27",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 580896
+    }
+   ]
+  },
+  "J5B9UGTuNoM": {
+   "titre": "I'm HOOKED on Claude Code Hooks: Advanced Agentic Coding",
+   "chaine": "IndyDevDan",
+   "chapitre": "ch27",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 124174
+    }
+   ]
+  },
+  "hvfNIi8jqPg": {
+   "titre": "Les PLUGINS sur Claude Code : ça devient incontrôlable !!",
+   "chaine": "Melvynx",
+   "chapitre": "ch27",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 8881
+    }
+   ]
+  },
+  "TUalmf9bByA": {
+   "titre": "How I Learn Things Really Fast (with AI)",
+   "chaine": "Tina Huang",
+   "chapitre": "ch28",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 193307
+    }
+   ]
+  },
+  "kZ-zzHVUrO4": {
+   "titre": "How I use Claude Code for real engineering",
+   "chaine": "Matt Pocock",
+   "chapitre": "ch30",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 314279
+    }
+   ]
+  },
+  "f8RnRuaxee8": {
+   "titre": "Claude 4 ADVANCED AI Coding: How I PARALLELIZE Claude Code with Git Worktrees",
+   "chaine": "IndyDevDan",
+   "chapitre": "ch30",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 52760
+    }
+   ]
+  },
+  "QB2XG-v4IPk": {
+   "titre": "1000h de Claude Code résumées en 1h30 (formation gratuite 2026)",
+   "chaine": "Melvynx",
+   "chapitre": "ch30",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 37310
+    }
+   ]
+  },
+  "6XvIMDFYh58": {
+   "titre": "J'ai laissé Claude Code monter mes vidéos",
+   "chaine": "Shubham Sharma",
+   "chapitre": "ch32",
+   "historique": [
+    {
+     "date": "2026-10-04",
+     "vues": 93876
+    }
+   ]
+  }
+ }
 }
