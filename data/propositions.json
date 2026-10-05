@@ -209,6 +209,34 @@
    "statut": "a_valider",
    "proposeeLe": "2026-10-04",
    "decideeLe": ""
+  },
+  {
+   "id": "dUzjzU_latE",
+   "chapitre": "ch27",
+   "url": "https://www.youtube.com/watch?v=dUzjzU_latE",
+   "titre": "Nouveau Claude Modes : Customize Claude comme tu veux (Opus 5.5 cheaté)",
+   "chaine": "Melvynx",
+   "chaineId": "melvynx",
+   "langue": "fr",
+   "datePublicationVideo": "2026-10-05",
+   "justification": "Correspond au chapitre 27 (« Démultiplier avec les compétences ») par les notions : claude, hooks, skills, mcp.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-05",
+   "decideeLe": ""
+  },
+  {
+   "id": "kS6xCG6oljU",
+   "chapitre": "ch01",
+   "url": "https://www.youtube.com/watch?v=kS6xCG6oljU",
+   "titre": "MCP, Skills, Plugins… quelle est la différence ?",
+   "chaine": "Shubham Sharma",
+   "chaineId": "shubham-sharma",
+   "langue": "fr",
+   "datePublicationVideo": "2026-10-04",
+   "justification": "Correspond au chapitre 1 (« L'ère du développeur augmenté ») par les notions : mcp, outils, premier, claude.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-05",
+   "decideeLe": ""
   }
  ]
 }
