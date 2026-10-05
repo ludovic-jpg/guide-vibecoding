@@ -258,5 +258,18 @@
   "justification": "Illustre le montage vidéo piloté par Claude Code, notion « méthode des cinq postes » et « montage sur transcription » du chapitre.",
   "statut": "en_ligne",
   "ajouteeLe": "2026-10-03"
+ },
+ {
+  "id": "3b0U4_02bAE",
+  "chapitre": "ch17",
+  "url": "https://www.youtube.com/watch?v=3b0U4_02bAE",
+  "titre": "Self-Compact Pi Agent: ZERO HYPE Agentic Coding Devlog",
+  "chaine": "IndyDevDan",
+  "chaineId": "indydevdan",
+  "langue": "en",
+  "datePublicationVideo": "2026-09-21",
+  "justification": "Correspond au chapitre 17 (« MCP et connecteurs : brancher Claude sur L'Atelier ») par les notions : agent, agents, claude.",
+  "statut": "en_ligne",
+  "ajouteeLe": "2026-10-05"
  }
 ]
