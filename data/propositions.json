@@ -237,6 +237,20 @@
    "statut": "a_valider",
    "proposeeLe": "2026-10-05",
    "decideeLe": ""
+  },
+  {
+   "id": "ySLnUg8xNcg",
+   "chapitre": "ch30",
+   "url": "https://www.youtube.com/watch?v=ySLnUg8xNcg",
+   "titre": "Mon Workflow CHEATÉ pour monter mes vidéos avec Opus 5.5",
+   "chaine": "Melvynx",
+   "chaineId": "melvynx",
+   "langue": "fr",
+   "datePublicationVideo": "2026-10-06",
+   "justification": "Correspond au chapitre 30 (« Dans la tête de l'agent : Claude Code raconté par son créateur ») par les notions : montre, claude, pourquoi, parallele.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-07",
+   "decideeLe": ""
   }
  ]
 }
