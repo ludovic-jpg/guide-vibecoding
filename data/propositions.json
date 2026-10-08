@@ -251,6 +251,20 @@
    "statut": "a_valider",
    "proposeeLe": "2026-10-07",
    "decideeLe": ""
+  },
+  {
+   "id": "ZKfgFCy9FbU",
+   "chapitre": "ch05",
+   "url": "https://www.youtube.com/watch?v=ZKfgFCy9FbU",
+   "titre": "GPT-6, Gemini et Claude s'affrontent dans mon jeu vidéo (c'est hilarant)",
+   "chaine": "Melvynx",
+   "chaineId": "melvynx",
+   "langue": "fr",
+   "datePublicationVideo": "2026-10-07",
+   "justification": "Correspond au chapitre 5 (« Construire sa mémoire ») par les notions : claude, skills, deux, pourquoi.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-08",
+   "decideeLe": ""
   }
  ]
 }
