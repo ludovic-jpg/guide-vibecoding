@@ -265,6 +265,34 @@
    "statut": "a_valider",
    "proposeeLe": "2026-10-08",
    "decideeLe": ""
+  },
+  {
+   "id": "rkK8ZyzYyEA",
+   "chapitre": "ch25",
+   "url": "https://www.youtube.com/watch?v=rkK8ZyzYyEA",
+   "titre": "8 GitHub Repos To Go Viral and Make Money",
+   "chaine": "Greg Isenberg",
+   "chaineId": "greg-isenberg",
+   "langue": "en",
+   "datePublicationVideo": "2026-10-08",
+   "justification": "Correspond au chapitre 25 (« Scaler l'application ») par les notions : github, test, testing.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-09",
+   "decideeLe": ""
+  },
+  {
+   "id": "xWuLotc8zjE",
+   "chapitre": "ch04",
+   "url": "https://www.youtube.com/watch?v=xWuLotc8zjE",
+   "titre": "Claude Desktop : l'erreur que font tous les débutants avec Claude Code",
+   "chaine": "Melvynx",
+   "chaineId": "melvynx",
+   "langue": "fr",
+   "datePublicationVideo": "2026-10-08",
+   "justification": "Correspond au chapitre 4 (« Configurer Claude : votre atelier ») par les notions : claude, skills, tout, faire.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-09",
+   "decideeLe": ""
   }
  ]
 }
