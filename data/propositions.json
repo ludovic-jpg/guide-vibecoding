@@ -293,6 +293,20 @@
    "statut": "a_valider",
    "proposeeLe": "2026-10-09",
    "decideeLe": ""
+  },
+  {
+   "id": "ytFsby6MYls",
+   "chapitre": "ch04",
+   "url": "https://www.youtube.com/watch?v=ytFsby6MYls",
+   "titre": "Claude Haiku 5.5 est SUPER SMART (j'en crois pas mes yeux)",
+   "chaine": "Melvynx",
+   "chaineId": "melvynx",
+   "langue": "fr",
+   "datePublicationVideo": "2026-10-09",
+   "justification": "Correspond au chapitre 4 (« Configurer Claude : votre atelier ») par les notions : claude, pas, jour, skills.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-10",
+   "decideeLe": ""
   }
  ]
 }
