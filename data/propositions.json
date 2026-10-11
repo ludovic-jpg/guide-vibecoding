@@ -307,6 +307,20 @@
    "statut": "a_valider",
    "proposeeLe": "2026-10-10",
    "decideeLe": ""
+  },
+  {
+   "id": "rVhitJk6KRU",
+   "chapitre": "ch07",
+   "url": "https://www.youtube.com/watch?v=rVhitJk6KRU",
+   "titre": "Claude Project : la nouvelle feature Cheatée de Claude Code",
+   "chaine": "Melvynx",
+   "chaineId": "melvynx",
+   "langue": "fr",
+   "datePublicationVideo": "2026-10-10",
+   "justification": "Correspond au chapitre 7 (« Les vingt réflexes du premier jour ») par les notions : claude, premier, cloud, pas.",
+   "statut": "a_valider",
+   "proposeeLe": "2026-10-11",
+   "decideeLe": ""
   }
  ]
 }
